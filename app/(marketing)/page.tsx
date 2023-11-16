@@ -1,7 +1,5 @@
 import Link from "next/link"
 
-import { env } from "@/env.mjs"
-import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 
@@ -17,7 +15,7 @@ export default async function IndexPage() {
           >
             Follow along on Twitter
           </Link> */}
-          <h1 className="text-3xl font-bold sm:text-5xl md:text-6xl md:font-extralight lg:text-[300px]">
+          <h1 className="text-3xl font-bold sm:text-5xl md:text-6xl md:font-extralight lg:text-[270px]">
             YK LABS
           </h1>
           <p className="my-6 max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
@@ -89,7 +87,7 @@ export default async function IndexPage() {
                   the blockchain ecosystems.
                 </p>
                 <Link
-                  href="https://awesomeaave.org"
+                  href="https://dev.awesomeaave.org"
                   className={cn(buttonVariants({ size: "lg" }))}
                 >
                   Visit Website
@@ -108,7 +106,7 @@ export default async function IndexPage() {
                   A cross-platform native application that provides a graphical
                   abstraction of key dfx cli capabilities.
                 </p>
-                <Link href="#" className={cn(buttonVariants({ size: "lg" }))}>
+                <Link href="" className={cn(buttonVariants({ size: "lg" }))}>
                   Visit Website
                 </Link>
               </div>
@@ -145,7 +143,7 @@ export default async function IndexPage() {
                   Solana Analytics Application. Currently in private
                   development.
                 </p>
-                <Link href="#" className={cn(buttonVariants({ size: "lg" }))}>
+                <Link href="" className={cn(buttonVariants({ size: "lg" }))}>
                   Visit Website
                 </Link>
               </div>
@@ -242,7 +240,10 @@ export default async function IndexPage() {
                   The integration allows you to simply upload/view files to/from
                   IPFS via web3.storage on Slack
                 </p>
-                <Link href="#" className={cn(buttonVariants({ size: "lg" }))}>
+                <Link
+                  href="https://github.com/tolgayayci/slack-ipfs-app"
+                  className={cn(buttonVariants({ size: "lg" }))}
+                >
                   Visit Website
                 </Link>
               </div>
